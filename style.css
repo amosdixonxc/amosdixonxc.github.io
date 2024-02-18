@@ -12,6 +12,7 @@ body {
     grid-template-areas: 
         "title buffer"
         "nav body"
+    ;
 }
 
 .title-section {
