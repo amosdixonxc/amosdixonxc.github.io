@@ -1,22 +1,25 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    background-color: #FAF0E6; /* Light Cream */
+    color: #333333; /* Very Dark Gray */
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
     display: flex;
+    flex-direction: row; /* Explicitly set direction to left-to-right */
 }
 
 .left-section {
     flex: 1; /* Smaller section */
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #FAF0E6;
+    text-align: right;
 }
 
 .right-section {
     flex: 1.618; /* Golden ratio */
     padding: 20px;
+    padding-top: 20px;
 }
 
 nav ul {
@@ -25,6 +28,18 @@ nav ul {
 }
 
 nav ul li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    color: black;
+    color: #333333;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    content: '>';
+    padding-right: 5px;
+}
+
+nav ul li a.active {
+    font-style: italic;
 }
