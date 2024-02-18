@@ -6,7 +6,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1.618fr; /* golden ratio */
+    grid-template-columns: minmax(200px, 1fr) minmax(320px, 1.618fr); /* golden ratio */
     grid-template-rows: auto auto;
     align-items: baseline;
     grid-template-areas: 
