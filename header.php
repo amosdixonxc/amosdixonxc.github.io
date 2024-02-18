@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Amos Dixon</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="title-section">
+<div class="title-section">
             <h1>amos dixon</h1>
         </div>
         <div class="buffer-section">
@@ -17,16 +9,8 @@
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="body-section">
-            <div id="home">
-                <p>Placeholder text for Home</p>
-        </div>
-    </div>
-</body>
-</html>

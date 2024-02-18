@@ -21,6 +21,7 @@ body {
     padding: 20px;
     text-align: right;
     padding-bottom: 0;
+    margin-left: 15vw;
 }
 
 .buffer-section {
@@ -35,6 +36,7 @@ body {
     background-color: #FAF0E6;
     text-align: right;
     grid-area: nav;
+    margin-left: 15vw;
 }
 
 .body-section {
@@ -42,6 +44,7 @@ body {
     padding: 20px;
     padding-top: 0px;
     grid-area: body;
+    margin-right: 15vw;
 }
 
 nav ul {
@@ -65,4 +68,8 @@ nav ul li a:hover::before {
 
 nav ul li a.active {
     font-style: italic;
+}
+
+a {
+    color: inherit; /* This will make the link color the same as the parent element's color */
 }
