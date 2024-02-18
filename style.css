@@ -5,21 +5,42 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: row; /* Explicitly set direction to left-to-right */
+    display: grid;
+    grid-template-columns: 1fr 1.618fr; /* golden ratio */
+    grid-template-rows: auto auto;
+    align-items: baseline;
+    grid-template-areas: 
+        "title buffer"
+        "nav body"
 }
 
-.left-section {
+.title-section {
+    grid-area: title;
+    flex:1;
+    padding: 20px;
+    text-align: right;
+    padding-bottom: 0;
+}
+
+.buffer-section {
+    grid-area: buffer;
+    padding-bottom: 0;
+}
+
+.nav-section {
     flex: 1; /* Smaller section */
     padding: 20px;
+    padding-top: 0;
     background-color: #FAF0E6;
     text-align: right;
+    grid-area: nav;
 }
 
-.right-section {
+.body-section {
     flex: 1.618; /* Golden ratio */
     padding: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
+    grid-area: body;
 }
 
 nav ul {
@@ -38,6 +59,7 @@ nav ul li a {
 nav ul li a:hover::before {
     content: '>';
     padding-right: 5px;
+    font-style: normal;
 }
 
 nav ul li a.active {
